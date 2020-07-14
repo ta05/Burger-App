@@ -1,0 +1,26 @@
+<div class="row justify-content">
+    <div class="col-md-4 burger-list" data-devoured="false">
+        {{#each burger}}
+            {{#unless devoured}}
+            {{this.burger_name}} <button class="devour-burger" data-id="{{this.id}}">Devour!</button>
+            {{/unless}}
+        {{/each}}
+    </div> 
+    <div class="col-md-4 burger-list" data-devoured="true">
+        {{#each burger}}
+            {{#if devoured}}
+            {{this.burger_name}}
+            {{/if}}
+        {{/each}}
+    </div>
+</div>
+
+<form class="create-form">
+
+    <div class="form-group">
+        <label for="ca">Burger Name:</label>
+        <input type="text" id="burger-text" name="name">
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
