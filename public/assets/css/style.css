@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(228, 228, 228);
+}
+
+h2 {
+    font-size: larger;
+    text-align: center;
+}
+
+.rest-header {
+    text-align: center;
+    color: rgba(53, 187, 53, 0.719);
+}
+
+[class^="fa-hamburger"], [class*=" fa-hamburger"] {
+    display: inline-block;
+    width: 100%;
+}
+
+.burger-icon {
+    text-align: center;
+    font-size: 200px;
+}
+
+.burger-item {
+    padding: 3px 0px;
+}
+
+.button-holder {
+    text-align: center;
+}
