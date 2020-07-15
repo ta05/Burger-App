@@ -15,17 +15,17 @@
     <br>
     
     <div class="row justify-content-center">
-        <div class="col-md-4 offset-md-2 burger-list" data-devoured="false">
+        <div class="col-md-4 offset-md-2 burger-list">
             {{#each burgers}}
                 {{#unless devoured}}
-                <div class="burger-item">{{this.burger_name}} <button class="eat-burger" data-id="{{this.id}}">Devour!</button></div>
+                <div class="burger-item" data-devoured="false">{{this.burger_name}} <button class="eat-burger" data-id="{{this.id}}">Devour!</button></div>
                 {{/unless}}
             {{/each}}
         </div> 
-        <div class="col-md-4 burger-list" data-devoured="true">
+        <div class="col-md-4 burger-list">
             {{#each burgers}}
                 {{#if devoured}}
-                <div class="burger-item">{{this.burger_name}}</div>
+                <div class="burger-item" data-devoured="true">{{this.burger_name}}</div>
                 {{/if}}
             {{/each}}
         </div>

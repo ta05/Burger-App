@@ -26,6 +26,10 @@ h2 {
     padding: 3px 0px;
 }
 
+.burger-item[data-devoured="true"] {
+    text-decoration: line-through;
+}
+
 .button-holder {
     text-align: center;
 }
