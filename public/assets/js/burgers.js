@@ -20,20 +20,23 @@ $(function () {
 
     $(".create-form").on("submit", function (event) {
         event.preventDefault();
+        if ($("#burger-text").val().trim() !== "") {
 
-        const newBurger = {
-            name: $("#burger-text").val().trim()
-        };
+            const newBurger = {
+                name: $("#burger-text").val().trim()
+            };
 
-        $.ajax("/api/burgers", {
-            type: "POST",
-            data: newBurger
-        }).then(
-            function () {
-                console.log("Created new burger");
+            $.ajax("/api/burgers", {
+                type: "POST",
+                data: newBurger
+            }).then(
+                function () {
+                    console.log("Created new burger");
 
-                location.reload();
-            }
-        );
+                    location.reload();
+                }
+            );
+        }
     });
+    
 });

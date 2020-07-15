@@ -1,15 +1,21 @@
+<header class="row">
+    <div class="col-md-12 col-centered rest-header">
+        <h1>Is a Burger a Sandwich?</h1>
+    </div>
+</header>
+
 <div class="row justify-content">
     <div class="col-md-4 burger-list" data-devoured="false">
         {{#each burgers}}
             {{#unless devoured}}
-            {{this.burger_name}} <button class="eat-burger" data-id="{{this.id}}">Devour!</button>
+            <div>{{this.burger_name}} <button class="eat-burger" data-id="{{this.id}}">Devour!</button></div>
             {{/unless}}
         {{/each}}
     </div> 
     <div class="col-md-4 burger-list" data-devoured="true">
         {{#each burgers}}
             {{#if devoured}}
-            {{this.burger_name}}
+            <div>{{this.burger_name}}</div>
             {{/if}}
         {{/each}}
     </div>
