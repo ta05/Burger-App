@@ -2,7 +2,7 @@
     <div class="col-md-4 burger-list" data-devoured="false">
         {{#each burgers}}
             {{#unless devoured}}
-            {{this.burger_name}} <button class="devour-burger" data-id="{{this.id}}">Devour!</button>
+            {{this.burger_name}} <button class="eat-burger" data-id="{{this.id}}">Devour!</button>
             {{/unless}}
         {{/each}}
     </div> 
