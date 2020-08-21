@@ -1,10 +1,8 @@
-#  Homework 13 - Node Express Handlebars: Burger App
+#  Node Express Handlebars: Burger App
 
 [![License](https://img.shields.io/badge/license-Apache-green.svg)](https://shields.io/)
 
-## Site
-
--   https://tolu-burger-app.herokuapp.com/
+https://tolu-burger-app.herokuapp.com/
 
 ## Description
 
